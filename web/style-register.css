@@ -1,0 +1,264 @@
+
+body {
+    background: linear-gradient(to bottom, rgba(52, 52, 56, 2.7), rgba(20, 20, 25, 2.9));
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to top, rgba(52, 52, 56, 0.7), rgba(20, 20, 25, 0.9));
+    margin-bottom: 10%;
+}
+
+button {
+    font-size: 20px;
+    padding: 20px;
+    margin: 10px;
+    color: aliceblue;
+    background: transparent;
+    border-color: transparent;
+    box-sizing: none;
+}
+
+
+button.logo {
+    margin: 0;
+}
+
+button.Login {
+    color: #FFB300;
+    text-shadow: #FFB300 1px 1px 6px;
+    box-shadow: 0px 2px 0px 0px;
+    margin-left: auto;
+}
+
+button:hover {
+    color: #FFB300;
+}
+
+
+p {
+    text-indent: 10px;
+}
+
+label {
+    margin-top: 5px;
+    margin-left: -8.1%;
+    cursor: text;
+    position: absolute;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease,
+        color 0.3s ease;
+}
+
+label#firstName {
+    margin-top: 13px;
+    margin-left: -7.5%;
+}
+
+label#lastName {
+    margin-top: 14px;
+    margin-left: -7.0%;
+}
+
+label#birth {
+    background-color: white;
+    margin-top: 16px;
+    margin-left: -8.0%;
+}
+
+label#email {
+    margin-top: 40px;
+    margin-left: -13.2%;
+}
+
+label#password {
+    margin-top: 40px;
+    margin-left: -6.8%;
+}
+
+label#verpassword {
+    margin-top: 40px;
+    margin-left: -8.1%;
+}
+
+input {
+    box-shadow: #99999994 5px 2px 8px 1px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 5px;
+    text-align: center;
+    height: 40px;
+    width: 35%;  
+}
+
+input#birth:valid + label#birth {
+    color: #e1ad01af ;
+    background-color: rgb(255, 255, 255);
+}
+
+input#birth:focus + label#birth {
+    color: #E1AD01 ;
+    background-color: rgb(255, 255, 255);
+}
+
+
+input:not(#birth):valid + label {
+    transform: translateY(-22px);
+    color: #be950c ;
+    background-color: rgb(255, 255, 255);
+}
+
+input:is(#email):not(:placeholder-shown):not(:focus) + label {
+    transform: translateY(-22px);
+    color: #E1AD01 ;
+    background-color: white;
+    z-index: 2;
+}
+
+
+
+
+input:not(#birth):focus + label {
+    transform: translateY(-22px);
+    color: #E1AD01 ;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+input:valid {
+    border-color: #E1AD01 ;
+}
+
+
+input:focus {
+    outline: none;
+    border-color: #E1AD01 ;
+}
+
+input#firstName {
+    margin-left: 5%;
+}
+
+
+
+input#lastName {
+    margin-left: 15%;
+}
+
+input#birth {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+input#email {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 87%;
+}
+
+input#password {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+
+input#verpassword {
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+
+
+button#submit {
+    border-radius: 5px;
+    color: #E1AD01;
+    border: 2px solid #E1AD01;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: transparent;
+    margin-top: 10%;
+    margin-left: 33%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button#submit:hover {
+    background: #E1AD01;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(225, 173, 1, 0.8);
+}
+
+main#primário {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    color: #FFB300;
+    padding: 1%;
+    margin-left: 50%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    /*background: linear-gradient(to bottom, rgba(52, 52, 56, 0.95), rgba(125, 125, 60, 0.6), rgba(244, 208, 63, 0.6));*/
+    box-shadow: 0px 0px 20px rgba(241, 196, 15, 0.6);
+    width: 520px;
+    height: 560px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+main#secundário {
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(52, 52, 56, 0.527); 
+    color: #e2ca80;
+    padding: 1%;
+    margin-left: 30%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-right-color: transparent;
+    width: 20%;
+    height: 560px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(241, 196, 15, 0.274);
+    z-index: -1;
+}
+
+
+h1.titulo {
+    margin-left: 8%;
+    text-align: start;
+    font-size: 3rem;
+    text-shadow: #e1ad0194 1px 5px 100px 1px;
+}
+
+
+
+main div {
+    padding: 20px;
+    color: #E1AD01;
+    text-align: left;
+    font-size: 13px;
+    margin: auto;
+
+}
+
+
+.fim {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+
+.fim:hover {
+    color: #E1AD01;
+}
+

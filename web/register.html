@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-register.css">
+    <title>Solvex - Registro</title>
+</head>
+<body> 
+        <nav>
+            <button title="Home" class="Logo"type="button">Logo</button>
+            <button class="Sobre nós"type="button"><i class="fa fa-home"></i>Sobre nós</button>
+            <button class="Parcerias"type="button">Parcerias</button>
+            <button class="Contactos"type="button">Contactos</button>
+            <button class="Login"type="button">Login</button>
+        </nav>
+        <main id="secundário">
+            <h1 class="titulo"></h1>
+            <div>
+                <h1 id="registo-titulo">Solvex ...</h1>
+            </div>
+        </main>
+        <main id="primário">
+            <h1 class="titulo">Criar Conta</h1>
+            <div id="foms">
+                <form action="/register" method="POST">
+                    <input type="text" id="firstName" name="firstName"  required>
+                    <label for="firstName" id="firstName">Primeiro Nome</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="lastName" id="lastName">Último Nome</label>
+                    <input type="date" id="birth" name="birth" required>
+                    <label for="date" id="birth">Data de Nascimento</label>
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email" id="email">Email</label>
+                    <input type="password" id="password" name="password" required>
+                    <label for="password" id="password">Password</label>
+                    <input type="password" id="verpassword" name="verpassword" required>
+                    <label for="verpassword" id="verpassword">Confirmar Password</label>
+                    <p>Já possue uma conta?<a href="">login</a></p>
+                    <button type="submit" id="submit">Registar</button>
+                </form>   
+            </div>
+        </main>
+        <footer>
+            <a class="fim" href="http://" target="_blank">(c)Solvex - 2025</a>
+        </footer>
+</body>
+<script src="script.js"></script>
+</html>
