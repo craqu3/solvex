@@ -7,23 +7,19 @@ if (verPassword != password){
 
 
 
-const observers = document.querySelectorAll('.fade-in');
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
 }, {
-    threshold: 0.1
+  threshold: 0.3 // ajusta conforme necessário
 });
 
-observers.forEach(element => {
-    observer.observe(element);
-});
+document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
 
 
 function scrollToSection(id) {
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }

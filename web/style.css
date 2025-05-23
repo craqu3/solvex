@@ -59,16 +59,17 @@ button:hover {
     transform: translateY(-2px);
 }
 
+/* PAGINA INICIAL */
+
 
 div#inicial {
-    transition: all 1.5s ease;
-    margin: 0;
-    border-radius: 5px;
-    backdrop-filter: blur(1px);
-    margin-left: 45vh;
-    padding-bottom: 10%;
-    text-align: justify;
-    color: #ffffff;
+  width: 80vh;             
+  margin: 0 auto;          
+  padding-top: 10vh;
+  text-align: justify;
+  color: #ffffff;
+  transition: all 1.5s ease;
+  border-radius: 5px;
 }
 
 h1#Titulo_Inicial {
@@ -87,12 +88,14 @@ h2#Titulo_Inicial {
 }
 
 h1 {
+    /*font-family: 'Lobster', cursive;*/
     font-size: 3.5rem;
     color: white;
     margin-bottom: 0;
 }
 
 h2 {
+    /*font-family: 'Lobster', cursive;*/
     font-size: 2rem;
 }
 
@@ -101,7 +104,7 @@ h3 {
     text-align: justify;
 }
 
-section:not(section#section-inicial,section#seguranca) {
+section:not(section#section-inicial,section#seguranca,section#parcerias) {
     margin-bottom: 10px;
     height: 100vh;
     background-color: #333333a2;
@@ -117,6 +120,8 @@ section#section-inicial {
 
 section#seguranca {
     height: 100vh;
+    transition: all 1.5s ease;
+    border-radius: 5px;
 }
 
 section#sobre {
@@ -130,13 +135,13 @@ section#sobre {
 }
 
 div#sobre {
-    width: 80vh;
-    transition: all 1.5s ease;
-    border-radius: 5px;
-    margin-left: 45vh;
-    padding-top: 30vh;
-    text-align: justify;
-    color: #ffffff;
+  width: 80vh;             /* ou outro valor em vh, se preferires */
+  margin: 0 auto;          /* centra o bloco horizontalmente */
+  padding-top: 30vh;
+  text-align: justify;     /* mantém o texto justificado */
+  color: #ffffff;
+  transition: all 1.5s ease;
+  border-radius: 5px;
 }
 
 /*button#sobre-inicial {
@@ -192,16 +197,23 @@ div#seguranca {
     padding: 20px;
     text-align: center;
     width: 300px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05), 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
 }
 
 .card img {
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05), 0 10px 30px rgba(0, 0, 0, 0.4);
+    background-color: #ffffff33;
     width: 100%;
-    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
+
+.card:hover {
+  transform: scale(1.05); /* AUMENTA 5% */
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05), 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
 
 .card h3 {
     text-align: center;
@@ -236,6 +248,22 @@ p {
     line-height: 1.6;
 }
 
+section#parcerias {
+    height: auto;
+    transition: all 1.5s ease;
+    border-radius: 5px;
+    margin-bottom: 20vh;
+}
+
+div#parcerias {
+    width: 80vh;
+    transition: all 1.5s ease;
+    border-radius: 5px;
+    margin-left: 45vh;
+    padding-top: 30vh;
+    text-align: justify;
+    color: #ffffff;
+}
 
 .fim {
     color: rgb(255, 255, 255);
@@ -265,20 +293,19 @@ html {
   transform: translateY(0);
 }
 
+/* LOGIN */
+
+
+
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
-    button {
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-    
-    button.Login {
-        margin-left: 0;
-    }
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1366px) {
@@ -317,3 +344,4 @@ html {
     }
     
 }
+
