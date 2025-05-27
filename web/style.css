@@ -64,7 +64,7 @@ button:hover {
 
 div#inicial {
   width: 80vh;             
-  margin: 0 auto;          
+  margin-left: 25%;          
   padding-top: 10vh;
   text-align: justify;
   color: #ffffff;
@@ -136,7 +136,7 @@ section#sobre {
 
 div#sobre {
   width: 80vh;             /* ou outro valor em vh, se preferires */
-  margin: 0 auto;          /* centra o bloco horizontalmente */
+  margin-left: 23%;               /* centra o bloco horizontalmente */
   padding-top: 30vh;
   text-align: justify;     /* mantém o texto justificado */
   color: #ffffff;
